@@ -71,6 +71,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+// this only deletes if there are no relations
 router.delete("/:id", async (req, res) => {
   // delete a category by its `id` value
   try {
